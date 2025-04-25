@@ -41,7 +41,7 @@ def test_calculo_area_retangulo_lista(l, h, resultado_esperado):
 
 # Tests utilizando massa de teste de um arquivo csv, para calculo da area do triangulo
 @pytest.mark.parametrize('b, h, resultado_esperado',   
-                        ler_csv('./fixtures/massa_calculo_triangulo.csv')   # Botão direito no arquivo massa / Copy Relative Path
+                        ler_csv('./fixtures/massa_calculo_triangulo.csv')  # Botão direito no arquivo massa / Copy Relative Path
                         )
 def test_calculo_area_triangulo_csv(b, h, resultado_esperado):
     resultado_obtido = calculo_area_triangulo(float(b), float(h))
